@@ -4,7 +4,8 @@ def replaceAll(str,key,val):
 
 class String:
   str = ""
-  bstr
+  bstr = ""
+  length = len(str)
   def __init__(string):
     str = string
     bstr = string
@@ -41,3 +42,39 @@ class String:
     str = bstr
   def len():
     return len(str)
+  def l():
+    return len(str)
+  def replace(i,v):
+    str = str.replace(i,v,1)
+    return str
+  def r(i,v):
+    str = str.replace(i,v,1)
+    return str
+  def pyformat(*vars)
+    return str.format(*vars)
+  def lenm(num):
+    return len(str) - num
+  def lena(num):
+    return len(str) + num
+  def lent(num):
+    return len(str) * num
+  def lend(num):
+    return len(str) / num
+  def set(stri):
+    str = stri
+  def bomb():
+    str = ""
+  def bstra(action="delete",data=""):
+    if action == "delete":
+      bstr = ""
+      str = ""
+      return bstr,str
+    elif action == "return":
+      return bstr,str
+    elif action == "append":
+      bstr = bstr + data
+      return bstr,str
+    elif action == "get":
+      return bstr,str
+    else:
+      return false,"Error: Invalid action."
