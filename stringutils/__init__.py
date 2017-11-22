@@ -78,3 +78,5 @@ class String:
       return bstr,str
     else:
       return false,"Error: Invalid action."
+  def get():
+    return str
