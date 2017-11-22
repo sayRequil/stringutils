@@ -8,4 +8,12 @@ class Template extends String:
   def temp(*vars):
     s = String(str)
     for i,v in *vars:
-      s.replaceAll("!{" + i + "}",v)
+      s.replaceAll("#{" + i + "}",v)
+  def tempA(*vars):
+    for s in *vars:
+      i = 1
+      while i < len(*vars):
+        s.replace("#{" + i + "}",i)
+        
+# temp: {varaaaaanamek}
+# tempA: {1} to #{10000000000000000000000000000+}
